@@ -27,10 +27,8 @@ This system uses two stereo images (left and right camera frames) to:
 - Uses **OpenCV StereoBM** algorithm to compute disparity (pixel difference between stereo pairs).
 
 ### 3. **Depth Estimation**
-- Computes depth using:
-  \[
-  \text{Depth} = \frac{focal\_length \times baseline}{disparity}
-  \]
+- Computes depth using: Depth = (focal_length × baseline) / disparity
+ 
 - Larger disparity -> object is closer to the camera.
 
 ---
